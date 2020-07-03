@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <input type="file" id="upfile">
+
+
+
+    <div style="margin-top: 100px;">
+
+        <button id="btn">点击我</button>
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+
+
+
+
+
+            $('#btn').on('touchend', function () {
+
+                    $('#upfile').trigger('click');
+
+
+
+                    // var el = $('#upfile').get(0);
+
+                    // var evt = document.createEvent("MouseEvents");
+
+                    // evt.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+
+                    // el.dispatchEvent(evt);
+
+                });
+
+            });
+    </script>
+
+</body>
+
+</html>
